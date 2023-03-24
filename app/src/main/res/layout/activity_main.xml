@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
    <TextView
+       android:id="@+id/tv_fragment_gone"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:text="BELUM ADA FRAGMENT"
@@ -40,6 +41,7 @@
           android:layout_width="wrap_content"
           android:layout_marginRight="20dp"
           android:text="Satu"
+          android:backgroundTint="@color/purple_200"
           app:layout_constraintTop_toBottomOf="@+id/container"
           android:layout_height="wrap_content"/>
 
