@@ -13,8 +13,21 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        supportFragmentManager.beginTransaction()
-            .add(R.id.container,FragmentSatu())
-            .commit()
+        binding.btnNext1.setOnClickListener {
+
+            supportFragmentManager.beginTransaction()
+                .add(R.id.container, FragmentSatu())
+                .commit()
+
+
+        }
+
+        binding.btnNext2.setOnClickListener {
+            supportFragmentManager.beginTransaction()
+                .add(R.id.container, FragmentDua())
+                .commit()
+        }
+
+
     }
 }
